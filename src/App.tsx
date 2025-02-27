@@ -11,7 +11,7 @@ import Cart from './components/Cart'
 function App() {
   return (
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <GlobalCss />
         <Rotas />
         <Footer />

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Button from '../../Button'
 import * as S from './styles'
 
@@ -43,13 +44,9 @@ const HomeLista = ({
         </S.Nota>
       </S.ContainerTitulo>
       <S.Descricao>{descricao}</S.Descricao>
-      <Button
-        type="link"
-        to={`/restaurantes/${id}`}
-        title="clique aqui para saber mais sobre o produto"
-      >
-        Saiba mais
-      </Button>
+      <Link to={`/restaurantes/${id}`}>
+        <Button type="button">Saiba mais</Button>
+      </Link>
     </S.Card>
   </>
 )

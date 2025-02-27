@@ -14,12 +14,7 @@ const Perfil = () => {
   const { id } = useParams() as RestaurantParams
   const { data: menu, isLoading: isLoadingPerfil } = useGetMenuQuery(id)
 
-  // const [menu, setCardapio] = useState<Cardapio[]>([])
-  // useEffect(() => {
-  //   fetch(`https://fake-api-tau.vercel.app/api/efood/restaurantes/${id}`)
-  //     .then((res) => res.json())
-  //     .then((res) => setCardapio(res?.cardapio))
-  // }, [id])
+
 
   return (
     <>

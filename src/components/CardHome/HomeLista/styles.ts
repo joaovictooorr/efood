@@ -35,6 +35,7 @@ export const Card = styled(Link)`
   }
 `
 
+
 export const ContainerTitulo = styled.div`
   display: flex;
   justify-content: space-between;

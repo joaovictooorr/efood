@@ -5,7 +5,6 @@ import { useGetHomeQuery } from '../../services/api'
 
 const Home = () => {
   const { data: home, isLoading } = useGetHomeQuery()
-  
 
   return (
     <>
